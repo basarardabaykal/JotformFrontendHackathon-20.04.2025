@@ -22,7 +22,6 @@ export default function Items() {
         const fetchedProducts = data.content.products;
         setProducts(fetchedProducts);
         
-        // Initialize quantities with 0 for each product
         const initialQuantities = {};
         fetchedProducts.forEach((product, index) => {
           initialQuantities[index] = 0;
@@ -123,7 +122,7 @@ export default function Items() {
         {Object.values(quantities).some(qty => qty > 0) && (
           <button 
             onClick={handleBuy}
-            className="mt-4 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="mt-4 w-full bg-gradient-to-r from-pink-400 to-blue-400  text-white font-bold py-2 px-4 rounded"
           >
             Buy Now
           </button>
