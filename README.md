@@ -16,6 +16,7 @@ You need to have Node.js installed.
 Use the commmands below:
 
 npm install
+
 npm install tailwindcss @tailwindcss/vite
 
 
