@@ -1,12 +1,30 @@
-# React + Vite
+# Jotform Frontend Hackathon Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## User Information
 
-Currently, two official plugins are available:
+- **Name**: Başar Arda Baykal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Description
+This is a simple e-commerce page which fetches a collection of products from a jotform endpoint and lists them.
+Users can choose the product that they want to buy and also decide how many they want to buy.
+Each product they choose is added to their cart and the total cost is calculated.
 
-## Expanding the ESLint configuration
+## Getting Started
+You need to have Node.js installed.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Use the commmands below:
+
+npm install
+npm install tailwindcss @tailwindcss/vite
+
+
+create a .env file at the root directory. Fill the "ITE_API_KEY" and "VITE_FORM_ID".
+
+
+Use the command below to launch the website:
+
+npm run dev
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
