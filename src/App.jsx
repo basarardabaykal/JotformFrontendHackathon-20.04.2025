@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Items from "./components/Items.jsx"
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +11,8 @@ function App() {
   return (
     <>
       <div className='bg-black h-screen w-screen flex justify-center items-center'>
-        <p className='text-white text-4xl'>Hello World!</p>
+        
+        <Items></Items>
       </div>
     </>
   )
