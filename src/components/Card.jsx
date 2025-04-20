@@ -1,16 +1,12 @@
-import { useState } from "react"
-
-export default function Card({title, price, description, image}) {
-    const [quantity, setQuantity] = useState(0);
-
+export default function Card({index, title, price, description, image, quantity, updateQuantity}) {
     const decreaseQuantity = () => {
         if (quantity > 0) {
-            setQuantity(quantity-1);
+            updateQuantity(index, quantity - 1);
         }
     }
 
     const increaseQuantity = () => {
-        setQuantity(quantity+1);
+        updateQuantity(index, quantity + 1);
     }
 
     return (
@@ -25,12 +21,11 @@ export default function Card({title, price, description, image}) {
                     <p>{price}</p>
                 </section>
                 <section className="text-2xl flex flex-row items-center mx-auto">
-                    <button onClick={() => decreaseQuantity()}>-</button>
+                    <button onClick={decreaseQuantity}>-</button>
                     <p className="mx-2">{quantity}</p>
-                    <button onClick={() => increaseQuantity()}>+</button>
+                    <button onClick={increaseQuantity}>+</button>
                 </section>
             </div>
-            
         </div>
     )
 }
