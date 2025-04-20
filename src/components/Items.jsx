@@ -29,7 +29,7 @@ export default function Items() {
   }, []);
 
   return (
-    <div className="w-3/5 flex flex-wrap gap-8 bg-gray-400 justify-center py-20 px-8">
+    <div className="w-3/5 flex flex-wrap gap-8 bg-white shadow-2xl shadow-gray-600 rounded-2xl my-20 justify-center py-20 px-8">
       {error && <p className="text-red-600 w-full text-center">{error}</p>}
 
       {products.length > 0 ? (

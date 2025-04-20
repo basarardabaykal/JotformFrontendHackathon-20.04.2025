@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-black h-auto w-screen overflow-x-hidden flex justify-center items-center'>
+      <div className='bg-gradient-to-r from-pink-200 to-blue-200 h-auto w-screen overflow-x-hidden flex justify-center items-center'>
         
         <Items></Items>
       </div>
